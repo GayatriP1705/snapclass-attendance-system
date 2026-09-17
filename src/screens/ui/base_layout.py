@@ -16,16 +16,18 @@ def style_background_home():
         
                 """
             ,unsafe_allow_html=True)
+            
     
 def style_background_dashboard():
     st.markdown("""
         <style>
-                .stApp{
-                    background: ##E0E3FF !important;
+
+                .stApp {
+                    background: #E0E3FF !important;
                 }
 
-        </style>
-        
+        </style>  
+
                 """
             ,unsafe_allow_html=True)
 
@@ -33,35 +35,38 @@ def style_background_dashboard():
 
 
 def style_base_layout():
+# asdasd
     st.markdown("""
         <style>
-            @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Outfit:wght@100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Climate+Crisis:YEAR@1979&family=Outfit:wght@100..900&display=swap');
 
-            /*hide Top Bar of streamlit*/
+        /*hide Top Bar of streamlit*/
             #MainMenu, footer, header {
+               visibility: hidden;
             }
             .block-container{
                 padding-top:1.5rem !important;
             }
             h1{
                 font-family:'Climate Crisis',sans-serif !important;
-                font-size:3.5rem !important;
+                font-size:2.5rem !important;
                 line-height:1.1 !important;
-                margin-botton:0rem !important;
+                margin-bottom:0rem !important;
 
             }
             h2{
                 font-family:'Climate Crisis',sans-serif !important;
                 font-size: 2rem !important;
                 line-height:0.9 !important;
-                margin-botton:0rem !important;
+                margin-bottom:0rem !important;
                 color:black !important;
             
             }
 
-            h3,h4,p{
+            h3, h4, p {
                 font-family:'Outfit',sans-serif;
+                
             }
 
             button{
@@ -97,7 +102,32 @@ def style_base_layout():
             button:hover{
             transform : scale(1.05)}
         </style>
+
         
                 """
             ,unsafe_allow_html=True)
-    
+
+
+def style_login_inputs():
+    st.markdown("""
+        <style>
+            div[data-testid="stTextInput"] input {
+                border: 1px solid #5865F2 !important;
+                border-radius: 1rem !important;
+                box-shadow: none !important;
+                outline: none !important;
+            }
+            div[data-testid="stTextInput"] > div {
+                border: none !important;
+                box-shadow: none !important;
+            }
+            div[data-testid="stTextInput"] div:focus-within {
+                box-shadow: none !important;
+                border: none !important;
+            }
+            div[data-testid="stTextInput"] *:focus {
+                box-shadow: none !important;
+                outline: none !important;
+            }
+        </style>
+    """, unsafe_allow_html=True)
