@@ -48,6 +48,7 @@ https://github.com/GayatriP1705/snapclass-attendance-system
 ---
 
 ## 📂 Project Structure
+```text
 
 Atendence-System-project/
 ├── .streamlit/
@@ -77,6 +78,7 @@ Atendence-System-project/
 ├── .gitignore
 ├── app.py
 └── requirements.txt
+```
 
 ---
 
